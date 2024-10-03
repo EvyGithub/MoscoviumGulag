@@ -10,9 +10,10 @@ def update(newLocation: str) -> None:
 
 def choice(options: list[str], prompt) -> str:
     # repeadtely ask user for an option, returns what they typed
+    
     temp = "honestly this string is a very nice placeholder that I spent a long time writing for absolutely no reason at all" # lol idk I like to have fun with placeholder variables
     print(prompt)
-    while temp not in validOptions:
+    while temp not in options:
         try:
             temp = input("> ").strip().lower()
         except EOFError:
